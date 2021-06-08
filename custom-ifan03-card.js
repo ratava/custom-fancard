@@ -197,6 +197,7 @@ class Card extends LitElement {
 customElements.define('custom-ifan03-card', Card);
 
 // entity: fan.ifan03
+// lightentity: light.ifan03
 // theme: dark
 // title: Ceiling fan
 // type: 'custom:custom-ifan03-card'
