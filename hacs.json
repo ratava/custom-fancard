@@ -1,7 +1,7 @@
 {
   "name": "Custom iFan03 Card",
   "content_in_root": true,
-  "filename": "custom-ifan03-card.js"
+  "filename": "custom-ifan03-card.js",
   "filename": "static/high.svg",
   "filename": "static/low.svg",
   "filename": "static/medium.svg",
