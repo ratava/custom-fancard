@@ -129,28 +129,28 @@ class Card extends LitElement {
       }
       
       div[light="toggle"] {
-        mask-image: url('static/lightbulb-on.svg');
-        -webkit-mask-image: url('static/off.svg');
+        mask-image: url('lightbulb.svg');
+        -webkit-mask-image: url(off.svg');
       }
 			
       div[data-speed="off"] {
-        mask-image: url('static/off.svg');
-        -webkit-mask-image: url('static/off.svg');
+        mask-image: url('off.svg');
+        -webkit-mask-image: url('off.svg');
       }
       
       div[data-speed="low"] {
-        mask-image: url('static/low.svg');
-        -webkit-mask-image: url('static/low.svg');
+        mask-image: url('low.svg');
+        -webkit-mask-image: url('low.svg');
       }
       
       div[data-speed="medium"] {
-        mask-image: url('static/medium.svg');
-        -webkit-mask-image: url('static/medium.svg');
+        mask-image: url('medium.svg');
+        -webkit-mask-image: url('medium.svg');
       }
       
       div[data-speed="high"] {
-        mask-image: url('static/high.svg');
-        -webkit-mask-image: url('static/high.svg');
+        mask-image: url('high.svg');
+        -webkit-mask-image: url('high.svg');
       }
       
       .light div[light="toggle"],
