@@ -23,13 +23,13 @@ class Card extends LitElement {
     <ha-card>
       <div class="card-header">${this.config.title}</div>
       <div class="content clear speed-${this.speed} ${this.theme}">
-				<div class="button" light="toggle" @click="${this._changeLight}"></div>
+        <div class="button" light="toggle" @click="${this._changeLight}"></div>
         <div class="button" data-speed="off" @click="${this._changeSpeed}"></div>
         <div class="button" data-speed="low" @click="${this._changeSpeed}"></div>
         <div class="button" data-speed="medium" @click="${this._changeSpeed}"></div>
         <div class="button" data-speed="high" @click="${this._changeSpeed}"></div>
         <span light="toggle">Light</span>
-				<span data-speed="off">Off</span>
+        <span data-speed="off">Off</span>
         <span data-speed="low">Low</span>
         <span data-speed="medium">Medium</span>
         <span data-speed="high">High</span>
@@ -130,7 +130,7 @@ class Card extends LitElement {
       
       div[light="toggle"] {
         mask-image: url('/local/community/custom-fancard/lightbulb.svg');
-        -webkit-mask-image: url('/local/community/custom-fancard/off.svg');
+        -webkit-mask-image: url('/local/community/custom-fancard/lightbulb.svg');
       }
 			
       div[data-speed="off"] {
