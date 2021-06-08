@@ -1,5 +1,5 @@
 {
   "name": "Custom iFan03 Card",
-  "content_in_root": true,
+  "content_in_root": false,
   "filename": "custom-ifan03-card.js"
 }
