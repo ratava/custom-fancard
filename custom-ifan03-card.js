@@ -129,28 +129,28 @@ class Card extends LitElement {
       }
       
       div[light="toggle"] {
-        mask-image: url('/local/custom-ifan03-card/static/lightbulb-on.svg');
-        -webkit-mask-image: url('/local/custom-ifan03-card/static/off.svg');
+        mask-image: url('static/lightbulb-on.svg');
+        -webkit-mask-image: url('static/off.svg');
       }
 			
       div[data-speed="off"] {
-        mask-image: url('/local/custom-ifan03-card/static/off.svg');
-        -webkit-mask-image: url('/local/custom-ifan03-card/static/off.svg');
+        mask-image: url('static/off.svg');
+        -webkit-mask-image: url('static/off.svg');
       }
       
       div[data-speed="low"] {
-        mask-image: url('/local/custom-ifan03-card/static/low.svg');
-        -webkit-mask-image: url('/local/custom-ifan03-card/static/low.svg');
+        mask-image: url('static/low.svg');
+        -webkit-mask-image: url('static/low.svg');
       }
       
       div[data-speed="medium"] {
-        mask-image: url('/local/custom-ifan03-card/static/medium.svg');
-        -webkit-mask-image: url('/local/custom-ifan03-card/static/medium.svg');
+        mask-image: url('static/medium.svg');
+        -webkit-mask-image: url('static/medium.svg');
       }
       
       div[data-speed="high"] {
-        mask-image: url('/local/custom-ifan03-card/static/high.svg');
-        -webkit-mask-image: url('/local/custom-ifan03-card/static/high.svg');
+        mask-image: url('static/high.svg');
+        -webkit-mask-image: url('static/high.svg');
       }
       
       .light div[light="toggle"],
@@ -194,10 +194,10 @@ class Card extends LitElement {
   }
 }
 
-customElements.define('custom-ifan03-card', Card);
+customElements.define('custom-fancard', Card);
 
 // entity: fan.ifan03
 // lightentity: light.ifan03
 // theme: dark
 // title: Ceiling fan
-// type: 'custom:custom-ifan03-card'
+// type: 'custom:custom-fancard'
