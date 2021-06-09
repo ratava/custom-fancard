@@ -18,6 +18,7 @@ class Card extends LitElement {
     this.speed = 'off';
   }
 
+/*
   render() {
     return html`
     <ha-card>
@@ -37,7 +38,25 @@ class Card extends LitElement {
     </ha-card>
     `;
   }
-
+*/
+  render() {
+    return html`
+    <ha-card>
+      <div class="card-header">${this.config.title}</div>
+      <div class="content clear speed-${this.speed} ${this.theme}">
+        <div class="button" data-speed="off" @click="${this._changeSpeed}"></div>
+        <div class="button" data-speed="low" @click="${this._changeSpeed}"></div>
+        <div class="button" data-speed="medium" @click="${this._changeSpeed}"></div>
+        <div class="button" data-speed="high" @click="${this._changeSpeed}"></div>
+        <span data-speed="off">Off</span>
+        <span data-speed="low">Low</span>
+        <span data-speed="medium">Normal</span>
+        <span data-speed="high">Fast</span>
+      </div>
+    </ha-card>
+    `;
+  }
+	
   _changeSpeed(e) {
     this.hass.callService('fan', 'set_speed', {
       entity_id: this.config.entity,
